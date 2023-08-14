@@ -1,8 +1,6 @@
 pipeline {
     agent any
 
- 
-
     stages {
         stage('Checkout') {
             steps {
@@ -10,24 +8,19 @@ pipeline {
             }
         }
 
- 
-
         stage('Build') {
             steps {
                 // Build your HTML code here if needed
+                sh 'echo "Building HTML code"'
             }
         }
-
- 
 
         stage('SonarQube Analysis') {
             steps {
                 script {
                     def scannerHome = tool 'SonarQube Scanner'
 
- 
-
-                    withSonarQubeEnv('sonar') {
+                    withSonarQubeEnv('SonarQubeServer') {
                         sh "${scannerHome}/bin/sonar-scanner"
                     }
                 }
@@ -35,11 +28,9 @@ pipeline {
         }
     }
 
- 
-
     post {
         always {
-            // Cleanupg or other post-build actions
+            // Cleanup or other post-build actions
         }
     }
 }
