@@ -18,10 +18,10 @@ pipeline {
         stage('SonarQube Analysis') {
             steps {
                 script {
-                    def scannerHome = tool 'sonarqube'  // Update with the correct SonarQube installation name
+                    def scannerHome = tool 'SonarQube Scanner'
 
-                    withSonarQubeEnv('sonar') {  // Update with the correct SonarQube server name
-                        sh "${scannerHome}/bin/sonar-scanner"
+                    withSonarQubeEnv('sonar') {
+                        sh "java -jar ${scannerHome}/lib/sonar-scanner-cli-4.6.2.2472.jar"  // Update the jar filename with the correct version
                     }
                 }
             }
