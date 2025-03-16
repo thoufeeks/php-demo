@@ -1,18 +1,19 @@
 Join Zoom Meeting
-https://us06web.zoom.us/j/89520473633?pwd=stu9urv5gGlD0zCp7kikizbD6DISDE.1
+https://us06web.zoom.us/j/84190763490?pwd=LKtcfNGmpPUQmEm056fIzc9dyCfaJb.1
 
-Meeting ID:  895 2047 3633
-Passcode: 465939
+Meeting ID:  841 9076 3490
+Passcode: 777968
 
 ---
 
 One tap mobile
-+16469313860,,89520473633#,,,,*465939# US
-+16694449171,,89520473633#,,,,*465939# US
++16468769923,,84190763490#,,,,*777968# US (New York)
++16469313860,,84190763490#,,,,*777968# US
 
 ---
 
 Dial by your location
+• +1 646 876 9923 US (New York)
 • +1 646 931 3860 US
 • +1 669 444 9171 US
 • +1 669 900 6833 US (San Jose)
@@ -30,12 +31,11 @@ Dial by your location
 • +1 408 638 0968 US (San Jose)
 • +1 507 473 4847 US
 • +1 564 217 2000 US
-• +1 646 876 9923 US (New York)
 
-Meeting ID:  895 2047 3633
-Passcode: 465939
+Meeting ID:  841 9076 3490
+Passcode: 777968
 
-Find your local number: https://us06web.zoom.us/u/kbzcy3kDf
+Find your local number: https://us06web.zoom.us/u/koHR4AH0k
 
 
 
