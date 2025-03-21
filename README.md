@@ -1,18 +1,24 @@
 Join Zoom Meeting
-https://us02web.zoom.us/j/89955378231?pwd=x7SJfTBxGHFXwbULsKNwQC9mgAQZRq.1
+https://us02web.zoom.us/j/89378961073?pwd=Lhjw3HNtfDmcKgM24FgarwsPA5rAeg.1
 
-Meeting ID:  899 5537 8231
-Passcode: 342293
+Meeting ID:  893 7896 1073
+Passcode: 457134
 
 ---
 
 One tap mobile
-+16892781000,,89955378231#,,,,*342293# US
-+17193594580,,89955378231#,,,,*342293# US
++15074734847,,89378961073#,,,,*457134# US
++15642172000,,89378961073#,,,,*457134# US
 
 ---
 
 Dial by your location
+• +1 507 473 4847 US
+• +1 564 217 2000 US
+• +1 646 558 8656 US (New York)
+• +1 646 931 3860 US
+• +1 669 444 9171 US
+• +1 669 900 9128 US (San Jose)
 • +1 689 278 1000 US
 • +1 719 359 4580 US
 • +1 253 205 0468 US
@@ -24,17 +30,11 @@ Dial by your location
 • +1 346 248 7799 US (Houston)
 • +1 360 209 5623 US
 • +1 386 347 5053 US
-• +1 507 473 4847 US
-• +1 564 217 2000 US
-• +1 646 558 8656 US (New York)
-• +1 646 931 3860 US
-• +1 669 444 9171 US
-• +1 669 900 9128 US (San Jose)
 
-Meeting ID:  899 5537 8231
-Passcode: 342293
+Meeting ID:  893 7896 1073
+Passcode: 457134
 
-Find your local number: https://us02web.zoom.us/u/kjcDsfdYg
+Find your local number: https://us02web.zoom.us/u/keJVWVxEer
 
 
 
