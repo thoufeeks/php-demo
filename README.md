@@ -1,21 +1,18 @@
 Join Zoom Meeting
-https://us02web.zoom.us/j/81074567584?pwd=G82iUCZYKukjfhjEecIhenEATwZaot.1
+https://us02web.zoom.us/j/84756720644?pwd=c3tWtkKqaVOq5S7OkxjJxiti44ymwj.1
 
-Meeting ID:  810 7456 7584
-Passcode: 763168
+Meeting ID:  847 5672 0644
+Passcode: 404224
 
 ---
 
 One tap mobile
-+13052241968,,81074567584#,,,,*763168# US
-+13092053325,,81074567584#,,,,*763168# US
++13462487799,,84756720644#,,,,*404224# US (Houston)
++13602095623,,84756720644#,,,,*404224# US
 
 ---
 
 Dial by your location
-• +1 305 224 1968 US
-• +1 309 205 3325 US
-• +1 312 626 6799 US (Chicago)
 • +1 346 248 7799 US (Houston)
 • +1 360 209 5623 US
 • +1 386 347 5053 US
@@ -30,11 +27,14 @@ Dial by your location
 • +1 253 205 0468 US
 • +1 253 215 8782 US (Tacoma)
 • +1 301 715 8592 US (Washington DC)
+• +1 305 224 1968 US
+• +1 309 205 3325 US
+• +1 312 626 6799 US (Chicago)
 
-Meeting ID:  810 7456 7584
-Passcode: 763168
+Meeting ID:  847 5672 0644
+Passcode: 404224
 
-Find your local number: https://us02web.zoom.us/u/kfTlRymG6
+Find your local number: https://us02web.zoom.us/u/kbZM96Iaof
 
 
 
