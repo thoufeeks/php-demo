@@ -1,40 +1,37 @@
-Join Zoom Meeting
-https://us02web.zoom.us/j/85223679654?pwd=CAvkxGxVTEY95qO1aEMPf2RwxwMJ2D.1
+# Install Nginx using Ansible
+# Start and Enable Nginx
+# Check the status of Nginx
+- name: Setup Nginx server on myserver list
+  hosts: web
+  become: true
+  tasks:
+    - name: Install the latest version of Nginx
+      command: sudo yum install nginx -y
+      args:
+        creates: /sbin/nginx
 
-Meeting ID:  852 2367 9654
-Passcode: 427162
+    - name: Start Nginx
+      service:
+        name: nginx
+        state: started
 
----
+    - name: Enable Nginx
+      service:
+        name: nginx
+        enabled: yes
 
-One tap mobile
-+13126266799,,85223679654#,,,,*427162# US (Chicago)
-+13462487799,,85223679654#,,,,*427162# US (Houston)
+    - name: Ensure Nginx is at the latest version
+      command: nginx -v
 
----
+    - name: Get status of installed Nginx
+      command: systemctl status nginx
 
-Dial by your location
-• +1 312 626 6799 US (Chicago)
-• +1 346 248 7799 US (Houston)
-• +1 360 209 5623 US
-• +1 386 347 5053 US
-• +1 507 473 4847 US
-• +1 564 217 2000 US
-• +1 646 558 8656 US (New York)
-• +1 646 931 3860 US
-• +1 669 444 9171 US
-• +1 669 900 9128 US (San Jose)
-• +1 689 278 1000 US
-• +1 719 359 4580 US
-• +1 253 205 0468 US
-• +1 253 215 8782 US (Tacoma)
-• +1 301 715 8592 US (Washington DC)
-• +1 305 224 1968 US
-• +1 309 205 3325 US
+    - name: Ansible copy file to remote server
+      copy:
+        src: /home/ec2-user/sample.txt
+        dest: /home/ec2-user/sample.txt
 
-Meeting ID:  852 2367 9654
-Passcode: 427162
-
-Find your local number: https://us02web.zoom.us/u/kdAHxzRcSt
-
-
-
+    - name: Deploy HTML file
+      copy:
+        src: /home/ec2-user/index.html
+        dest: /usr/share/nginx/html/index.html
