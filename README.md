@@ -1,40 +1,26 @@
-Join Zoom Meeting
-https://us02web.zoom.us/j/83152644702?pwd=miq4sTdGMzJxqs3MCrvUD7SEgLkAgm.1
 
-Meeting ID:  831 5264 4702
-Passcode: 470353
+• 1--Install kubectl on Jenkins
+ sudo apt update
+ sudo apt install curl
+ curl -LO https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl
+ sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+ kubectl version --client
 
----
+2--Install AWS Cli
 
-One tap mobile
-+16469313860,,83152644702#,,,,*470353# US
-+16694449171,,83152644702#,,,,*470353# US
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+sudo apt install unzip
+unzip awscliv2.zip
+sudo ./aws/install
+aws --version
 
----
+3--Installing  eksctl
 
-Dial by your location
-• +1 646 931 3860 US
-• +1 669 444 9171 US
-• +1 669 900 9128 US (San Jose)
-• +1 689 278 1000 US
-• +1 719 359 4580 US
-• +1 253 205 0468 US
-• +1 253 215 8782 US (Tacoma)
-• +1 301 715 8592 US (Washington DC)
-• +1 305 224 1968 US
-• +1 309 205 3325 US
-• +1 312 626 6799 US (Chicago)
-• +1 346 248 7799 US (Houston)
-• +1 360 209 5623 US
-• +1 386 347 5053 US
-• +1 507 473 4847 US
-• +1 564 217 2000 US
-• +1 646 558 8656 US (New York)
+curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
+cd /tmp
+sudo mv /tmp/eksctl /bin
+eksctl version
 
-Meeting ID:  831 5264 4702
-Passcode: 470353
+4--Setup Kubernetes using eksctl
 
-Find your local number: https://us02web.zoom.us/u/keyWx3UJSN
-
-
-
+eksctl create cluster --name <Your required name for clusetr> --region ap-south-1 --node-type t2.small --nodes 3 
