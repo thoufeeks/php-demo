@@ -1,26 +1,40 @@
-# PHP
-# Test and package your PHP project.
-# Add steps that run tests, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/php
+Join Zoom Meeting
+https://us02web.zoom.us/j/89159342141?pwd=WBRQtQc6V1UCAKtNaQlk1413MxH3CT.1
 
-trigger:
-- master
+Meeting ID:  891 5934 2141
+Passcode: 206228
 
-pool:
-  vmImage: ubuntu-latest
+---
 
-variables:
-  phpVersion: 7.2
+One tap mobile
++13092053325,,89159342141#,,,,*206228# US
++13126266799,,89159342141#,,,,*206228# US (Chicago)
 
-steps:
-- script: |
-    sudo update-alternatives --set php /usr/bin/php$(phpVersion)
-    sudo update-alternatives --set phar /usr/bin/phar$(phpVersion)
-    sudo update-alternatives --set phpdbg /usr/bin/phpdbg$(phpVersion)
-    sudo update-alternatives --set php-cgi /usr/bin/php-cgi$(phpVersion)
-    sudo update-alternatives --set phar.phar /usr/bin/phar.phar$(phpVersion)
-    php -version
-  displayName: 'Use PHP version $(phpVersion)'
+---
 
-- script: composer install --no-interaction --prefer-dist
-  displayName: 'composer install'
+Dial by your location
+• +1 309 205 3325 US
+• +1 312 626 6799 US (Chicago)
+• +1 346 248 7799 US (Houston)
+• +1 360 209 5623 US
+• +1 386 347 5053 US
+• +1 507 473 4847 US
+• +1 564 217 2000 US
+• +1 646 558 8656 US (New York)
+• +1 646 931 3860 US
+• +1 669 444 9171 US
+• +1 669 900 9128 US (San Jose)
+• +1 689 278 1000 US
+• +1 719 359 4580 US
+• +1 253 205 0468 US
+• +1 253 215 8782 US (Tacoma)
+• +1 301 715 8592 US (Washington DC)
+• +1 305 224 1968 US
+
+Meeting ID:  891 5934 2141
+Passcode: 206228
+
+Find your local number: https://us02web.zoom.us/u/ke9ZqH5Gp
+
+
+
