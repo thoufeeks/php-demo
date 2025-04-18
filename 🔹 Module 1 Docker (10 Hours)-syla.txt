@@ -1,0 +1,152 @@
+🔹 Module 1: Docker (10 Hours)
+🔧 1. Introduction to Containers (1 hour)
+What are containers?
+
+Difference between VMs and containers
+
+Use-cases of Docker in real-world DevOps
+
+🐳 2. Docker Basics (2 hours)
+Docker architecture (Engine, CLI, Daemon, Registry)
+
+Installing Docker on Linux/Windows/Mac
+
+Docker CLI Commands: docker run, ps, stop, start, rm, etc.
+
+📦 3. Working with Docker Images (2 hours)
+Docker Hub & image pulling
+
+Dockerfile – writing and building custom images
+
+Image versioning & tagging
+
+Best practices for image optimization
+
+📂 4. Docker Volumes and Networks (1.5 hours)
+Bind mounts vs named volumes
+
+Sharing data between containers
+
+Docker network modes
+
+Linking containers using user-defined bridge networks
+
+⚙️ 5. Docker Compose (1.5 hours)
+Introduction to docker-compose.yml
+
+Multi-container applications
+
+Environment variables and networks in Compose
+
+🔒 6. Docker Security and Best Practices (1 hour)
+Image scanning
+
+User permissions and rootless containers
+
+Minimizing image size
+
+🧪 7. Real-world mini-project (1 hour)
+Host a multi-tier app (Frontend + Backend + DB) using Docker Compose
+
+🔹 Module 2: Kubernetes (14 Hours)
+🌱 1. Introduction to Kubernetes (1 hour)
+What is Kubernetes?
+
+Use cases, architecture overview (master & nodes)
+
+Cloud-native landscape
+
+📦 2. Pods, ReplicaSets, Deployments (2 hours)
+Pods explained
+
+ReplicaSets and high availability
+
+Deployments and rollout strategies
+
+🔁 3. Services and Networking (2 hours)
+ClusterIP, NodePort, LoadBalancer
+
+DNS in Kubernetes
+
+Ingress controllers (basic intro)
+
+🗃️ 4. ConfigMaps and Secrets (1 hour)
+Storing config data
+
+Injecting into pods securely
+
+🧠 5. StatefulSets, DaemonSets, and Jobs (1 hour)
+Differences from Deployments
+
+When to use which
+
+CronJobs for automation
+
+🔧 6. Storage in Kubernetes (1 hour)
+Volumes, PVC, PV
+
+Storage classes (basic overview)
+
+🛡️ 7. RBAC and Namespaces (1 hour)
+Multi-tenancy using namespaces
+
+RBAC: roles, rolebindings, service accounts
+
+🛠️ 8. Helm Basics (1 hour)
+What is Helm?
+
+Helm charts and repositories
+
+Deploying apps using Helm
+
+📊 9. Monitoring & Logging (1 hour)
+Overview of Prometheus & Grafana
+
+Logging using Fluentd/Elasticsearch/Kibana
+
+☸️ 10. Hands-on Projects (3 hours)
+Deploying a microservices app
+
+Blue/Green deployment strategy
+
+Scale, upgrade, rollback app versions
+
+🔹 Module 3: Jenkins + Terraform + Ansible (8 Hours)
+🧪 Jenkins (3 hours)
+Jenkins architecture and installation
+
+Jenkins Jobs and Pipelines (Freestyle vs Declarative)
+
+Jenkinsfile basics
+
+Integrating Git and GitHub
+
+CI/CD Pipeline with Docker/Kubernetes (basic)
+
+Jenkins plugins and best practices
+
+🌍 Terraform (2.5 hours)
+Introduction to IaC and Terraform
+
+Providers, Resources, Variables
+
+Creating and destroying infrastructure (AWS preferred)
+
+Remote state and backend
+
+Terraform with modules and workspaces
+
+Sample Project: Provision EC2 + Security Group
+
+⚙️ Ansible (2.5 hours)
+What is Ansible? Agentless architecture
+
+YAML and Playbook structure
+
+Inventory and ad-hoc commands
+
+Roles and Variables
+
+Ansible Vault
+
+Sample Project: Deploy app on multiple VMs
