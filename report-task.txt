@@ -1,11 +1,8 @@
-node {
-  stage('SCM') {
-    checkout scm
-  }
-  stage('SonarQube Analysis') {
-    def scannerHome = tool 'SonarScanner';
-    withSonarQubeEnv() {
-      sh "${scannerHome}/bin/sonar-scanner"
-    }
-  }
-}
+Join Zoom Meeting
+https://zoom.us/j/94372636577?pwd=xkCXpbSQ2amobcmVmPZP9t3f9tpfYA.1
+
+Meeting ID:  943 7263 6577
+Passcode: 385183
+
+
+
