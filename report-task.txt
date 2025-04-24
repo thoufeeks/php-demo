@@ -1,13 +1,1 @@
-apiVersion: v1
-kind: Pod
-metadata:
-  name: toleration-demo
-spec:
-  containers:
-  - name: nginx
-    image: nginx
-  tolerations:
-  - key: "env"
-    operator: "Equal"
-    value: "prod"
-    effect: "NoSchedule"
+https://us02web.zoom.us/j/84039245692?pwd=T3zvha2vmSLRobpF2e16tTac5K3QfY.1
