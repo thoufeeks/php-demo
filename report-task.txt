@@ -1,8 +1,29 @@
-Join Zoom Meeting
-https://zoom.us/j/96675375695?pwd=bcA8RkXm9inEFKSYVloQOeO4bZb1HF.1
+Thoufeek S has invited you to "AWS DevOps Engineering Batch -4".
 
-Meeting ID:  966 7537 5695
-Passcode: 857487
+Meeting Details:
+     Topic: AWS DevOps Engineering Batch -4
+     Date & Time: Saturday, 10 May 2025 | 07:00 AM (IST)
+     Duration: 1 hr 30 mins
+     Number of participants invited: 0
+
+More ways to join meeting
+    •  Join using meeting link:
+         
+https://jiomeetpro.jio.com/shortener?meetingId=8100901262&pwd=P62gD
+
+    •  Join using Meeting ID:
+        Meeting ID:  810 090 1262
+        Password:  P62gD
+        Join using desktop, mobile application or through web and use above details
 
 
+Add meeting to your calender:
+https://jiomeetpro.jio.com/addtojiomeet?meetingId=8100901262&pwd=P62gD&isWebinar=false
 
+Download .ics file:
+https://jiomeetpro.jio.com/downloadICSFile?jiomeetId=8100901262&roomPIN=P62gD
+
+Need help? Go to https://jiomeetpro.jio.com/webhelp
+
+Regards,
+JioMeet team
