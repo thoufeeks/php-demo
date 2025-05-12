@@ -1,5 +1,8 @@
-sudo apt install wget apt-transport-https gnupg lsb-release
-wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | sudo apt-key add -
-echo deb https://aquasecurity.github.io/trivy-repo/deb $(lsb_release -sc) main | sudo tee -a /etc/apt/sources.list.d/trivy.list
-sudo apt update
-sudo apt install trivy
+Join Zoom Meeting
+https://zoom.us/j/91405018118?pwd=TIon5opY55MXbC2AXFmM5wJysbWXyw.1
+
+Meeting ID:  914 0501 8118
+Passcode: 925600
+
+
+
