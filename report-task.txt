@@ -1,8 +1,69 @@
-Join Zoom Meeting
-https://zoom.us/j/91405018118?pwd=TIon5opY55MXbC2AXFmM5wJysbWXyw.1
+apiVersion: v1
+kind: Secret
+metadata:
+  name: db-secret
+type: Opaque
+data:
+  username: cm9vdA==         # base64 of "root"
+  password: cGFzc3dvcmQ=     # base64 of "password"
 
-Meeting ID:  914 0501 8118
-Passcode: 925600
 
+-------------------
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mysql
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mysql
+  template:
+    metadata:
+      labels:
+        app: mysql
+    spec:
+      containers:
+      - name: mysql
+        image: mysql:5.7
+        env:
+        - name: MYSQL_ROOT_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: db-secret
+              key: password
+        ports:
+        - containerPort: 3306
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mysql
+spec:
+  selector:
+    app: mysql
+  ports:
+  - port: 3306
+    targetPort: 3306
+-------------------------
 
-
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mysql-client
+spec:
+  containers:
+  - name: mysql-client
+    image: mysql:5.7
+    command: [ "sleep", "3600" ]
+    env:
+    - name: MYSQL_USER
+      valueFrom:
+        secretKeyRef:
+          name: db-secret
+          key: username
+    - name: MYSQL_PASSWORD
+      valueFrom:
+        secretKeyRef:
+          name: db-secret
+          key: password
