@@ -1,42 +1,6 @@
-pipeline {
-    agent any
-
-    tools {
-        jdk 'jdk'
-    }
-
-    environment {
-        SCANNER_HOME = tool 'sonar-scanner'
-    }
-
-    stages {
-        stage('Git Checkout') {
-            steps {
-                git branch: 'main', url: 'https://github.com/thoufeeks/Python-Webapp.git'
-            }
-        }
-
-        stage('OWASP Dependency') {
-            steps {
-                dependencyCheck additionalArguments: '--scan ./', odcInstallation: 'DC'
-                dependencyCheckPublisher pattern: '**/dependency-check-report.xml'
-            }
-        }
-
-        stage('Trivy FS') {
-            steps {
-                sh 'trivy fs .'
-            }
-        }
-
-        stage('SonarQube Analysis') {
-            steps {
-                withSonarQubeEnv('sonar') {
-                    sh ''' $SCANNER_HOME/bin/sonar-scanner \
-                    -Dsonar.projectName=Python-webapp \
-                    -Dsonar.projectKey=Python-webapp '''
-                }
-            }
-        }
-    }
-}
+Copyvi trivy.sh
+sudo apt-get install wget apt-transport-https gnupg lsb-release -y
+wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | gpg --dearmor | sudo tee /usr/share/keyrings/trivy.gpg > /dev/null
+echo "deb [signed-by=/usr/share/keyrings/trivy.gpg] https://aquasecurity.github.io/trivy-repo/deb $(lsb_release -sc) main" | sudo tee -a /etc/apt/sources.list.d/trivy.list
+sudo apt-get update
+sudo apt-get install trivy -y
