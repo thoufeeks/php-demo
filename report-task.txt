@@ -1,8 +1,42 @@
-Join Zoom Meeting
-https://zoom.us/j/95412726252?pwd=V7ZmZ6UgF67zExGjDLmWoAEqPtCdub.1
+pipeline {
+    agent any
 
-Meeting ID:  954 1272 6252
-Passcode: 986746
+    tools {
+        jdk 'jdk'
+    }
 
+    environment {
+        SCANNER_HOME = tool 'sonar-scanner'
+    }
 
+    stages {
+        stage('Git Checkout') {
+            steps {
+                git branch: 'main', url: 'https://github.com/thoufeeks/Python-Webapp.git'
+            }
+        }
 
+        stage('OWASP Dependency') {
+            steps {
+                dependencyCheck additionalArguments: '--scan ./', odcInstallation: 'DC'
+                dependencyCheckPublisher pattern: '**/dependency-check-report.xml'
+            }
+        }
+
+        stage('Trivy FS') {
+            steps {
+                sh 'trivy fs .'
+            }
+        }
+
+        stage('SonarQube Analysis') {
+            steps {
+                withSonarQubeEnv('sonar') {
+                    sh ''' $SCANNER_HOME/bin/sonar-scanner \
+                    -Dsonar.projectName=Python-webapp \
+                    -Dsonar.projectKey=Python-webapp '''
+                }
+            }
+        }
+    }
+}
