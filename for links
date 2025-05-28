@@ -1,8 +1,6 @@
-Join Zoom Meeting
-https://zoom.us/j/97809490555?pwd=LNcquyylfQtHWLLiY6vxaROj7GHX0d.1
-
-Meeting ID:  978 0949 0555
-Passcode: 045771
-
-
-
+Copyvi trivy.sh
+sudo apt-get install wget apt-transport-https gnupg lsb-release -y
+wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | gpg --dearmor | sudo tee /usr/share/keyrings/trivy.gpg > /dev/null
+echo "deb [signed-by=/usr/share/keyrings/trivy.gpg] https://aquasecurity.github.io/trivy-repo/deb $(lsb_release -sc) main" | sudo tee -a /etc/apt/sources.list.d/trivy.list
+sudo apt-get update
+sudo apt-get install trivy -y
