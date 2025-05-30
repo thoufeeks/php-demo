@@ -1,3 +1,8 @@
+curl -LO "https://dl.k8s.io/release/$(curl -sL https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+chmod +x kubectl
+sudo mv kubectl /usr/local/bin/
+
+
 Join Zoom Meeting
 https://us02web.zoom.us/j/89159342141?pwd=WBRQtQc6V1UCAKtNaQlk1413MxH3CT.1
 
