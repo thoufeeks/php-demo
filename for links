@@ -3,3 +3,18 @@ wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | gpg --dear
 echo "deb [signed-by=/usr/share/keyrings/trivy.gpg] https://aquasecurity.github.io/trivy-repo/deb $(lsb_release -sc) main" | sudo tee -a /etc/apt/sources.list.d/trivy.list
 sudo apt-get update
 sudo apt-get install trivy -y
+
+
+
+
+
+
+Join Zoom Meeting
+https://zoom.us/j/93965867358?pwd=jv2XCH3VMhs2eWau6oj3vpbEczt0g4.1
+
+Meeting ID:  939 6586 7358
+Passcode: 938070
+
+
+
+
