@@ -1,3 +1,10 @@
+curl -L https://istio.io/downloadIstio | sh -
+cd istio-*
+export PATH=$PWD/bin:$PATH
+
+
+
+
 pipeline {
     agent any
 
