@@ -23,12 +23,21 @@ sudo mv kubectl /usr/local/bin/
 
 
 
-----------
-Join Zoom Meeting
-https://zoom.us/j/92014770883?pwd=ZPLbz4O4KFLdk5dpFbdc1wLVSrftJk.1
+http {
+    upstream backend {
+        server <VM2_Private_IP>;
+        server <VM3_Private_IP>;
+    }
 
-Meeting ID:  920 1477 0883
-Passcode: 160109
+    server {
+        listen 80;
+
+        location / {
+            proxy_pass http://backend;
+        }
+    }
+}
+
 
 
 
