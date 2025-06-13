@@ -1,34 +1,3 @@
-
-curl -o aws-iam-authenticator https://amazon-eks.s3.us-west-2.amazonaws.com/1.29.0/2024-05-24/bin/linux/amd64/aws-iam-authenticator
-
-Step-by-Step Installation on EC2 (Amazon Linux / Ubuntu)
-1. Download the Binary
-not
-
-Copy
-
-Edit
-curl -o aws-iam-authenticator https://amazon-eks.s3.us-west-2.amazonaws.com/1.27.11/2024-05-16/bin/linux/amd64/aws-iam-authenticator
-🔄 You can change 1.27.11 to match your EKS cluster version if needed.
-
-2. Make it Executable
-bash
-
-Copy
-
-Edit
 chmod +x aws-iam-authenticator
-3. Move to /usr/local/bin
-bash
-
-Copy
-
-Edit
 sudo mv aws-iam-authenticator /usr/local/bin/
-4. Verify Installation
-bash
-
-Copy
-
-Edit
 aws-iam-authenticator version
