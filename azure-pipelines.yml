@@ -1,45 +1,31 @@
-curl -LO "https://dl.k8s.io/release/$(curl -sL https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
-chmod +x kubectl
-sudo mv kubectl /usr/local/bin/
+Step-by-Step Installation on EC2 (Amazon Linux / Ubuntu)
+1. Download the Binary
+not
 
+Copy
 
-Join Zoom Meeting
-https://us02web.zoom.us/j/89159342141?pwd=WBRQtQc6V1UCAKtNaQlk1413MxH3CT.1
+Edit
+curl -o aws-iam-authenticator https://amazon-eks.s3.us-west-2.amazonaws.com/1.27.11/2024-05-16/bin/linux/amd64/aws-iam-authenticator
+🔄 You can change 1.27.11 to match your EKS cluster version if needed.
 
-Meeting ID:  891 5934 2141
-Passcode: 206228
+2. Make it Executable
+bash
 
----
+Copy
 
-One tap mobile
-+13092053325,,89159342141#,,,,*206228# US
-+13126266799,,89159342141#,,,,*206228# US (Chicago)
+Edit
+chmod +x aws-iam-authenticator
+3. Move to /usr/local/bin
+bash
 
----
+Copy
 
-Dial by your location
-• +1 309 205 3325 US
-• +1 312 626 6799 US (Chicago)
-• +1 346 248 7799 US (Houston)
-• +1 360 209 5623 US
-• +1 386 347 5053 US
-• +1 507 473 4847 US
-• +1 564 217 2000 US
-• +1 646 558 8656 US (New York)
-• +1 646 931 3860 US
-• +1 669 444 9171 US
-• +1 669 900 9128 US (San Jose)
-• +1 689 278 1000 US
-• +1 719 359 4580 US
-• +1 253 205 0468 US
-• +1 253 215 8782 US (Tacoma)
-• +1 301 715 8592 US (Washington DC)
-• +1 305 224 1968 US
+Edit
+sudo mv aws-iam-authenticator /usr/local/bin/
+4. Verify Installation
+bash
 
-Meeting ID:  891 5934 2141
-Passcode: 206228
+Copy
 
-Find your local number: https://us02web.zoom.us/u/ke9ZqH5Gp
-
-
-
+Edit
+aws-iam-authenticator version
