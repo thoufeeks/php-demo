@@ -1,3 +1,6 @@
+
+https://zoom.us/j/92152598981?pwd=9Ls9zTT1fbMRw2OciR90YmUPnGGmkm.1
+
 helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 helm repo update
 
