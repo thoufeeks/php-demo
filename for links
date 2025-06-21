@@ -1,5 +1,13 @@
 kubectl run -i --tty load-generator --rm --image=busybox --restart=Never -- /bin/sh -c "while sleep 0.01; do wget -q -O- http://hpa-demo.default.svc.cluster.local; done"
 
+Join Zoom Meeting
+https://zoom.us/j/92870427043?pwd=86rpaeeTiaHjaGp3JYzwUpkMbOIIaQ.1
+
+Meeting ID:  928 7042 7043
+Passcode: 442829
+
+
+
 
 
 sudo apt-get install wget apt-transport-https gnupg lsb-release -y
