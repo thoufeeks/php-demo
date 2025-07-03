@@ -2,7 +2,7 @@ kubectl run -i --tty load-generator --rm --image=busybox --restart=Never -- /bin
 
 https://zoom.us/j/99020917021?pwd=viIwlPUpZ7V7DUsoOLMwQCPfv696DS.1
 
-
+https://zoom.us/j/99763894004?pwd=aCaF0SMKQ3c5ifdx3TbNq6bbfH3opR.1
 
 
 sudo apt-get install wget apt-transport-https gnupg lsb-release -y
