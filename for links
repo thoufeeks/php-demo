@@ -1,6 +1,14 @@
 kubectl run -i --tty load-generator --rm --image=busybox --restart=Never -- /bin/sh -c "while sleep 0.01; do wget -q -O- http://hpa-demo.default.svc.cluster.local; done"
 
-https://zoom.us/j/97643582477?pwd=Fkyueb2bWZF132hlEa0SrYb3OHxnTR.1
+Join Zoom Meeting
+https://zoom.us/j/97414699994?pwd=rUvkz2ZBvJr786I2dSbfogx3FaaNUD.1
+
+Meeting ID:  974 1469 9994
+Passcode: 680475
+
+
+
+
 
 sudo apt-get install wget apt-transport-https gnupg lsb-release -y
 wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | gpg --dearmor | sudo tee /usr/share/keyrings/trivy.gpg > /dev/null
