@@ -1,1 +1,60 @@
-https://meet.google.com/njb-kpsx-yad
+- name: Deploy Two Sample Apps on NGINX
+  hosts: webservers
+  become: true
+
+  tasks:
+    - name: Enable nginx repo
+      command: amazon-linux-extras enable nginx1
+      args:
+        creates: /etc/yum.repos.d/nginx.repo
+
+    - name: Install nginx
+      yum:
+        name: nginx
+        state: present
+
+    - name: Create /var/www/app1 directory
+      file:
+        path: /var/www/app1
+        state: directory
+        mode: '0755'
+
+    - name: Create /var/www/app2 directory
+      file:
+        path: /var/www/app2
+        state: directory
+        mode: '0755'
+
+    - name: Create sample index.html for App 1
+      copy:
+        content: "<h1>This is App 1 - Deployed via Ansible</h1>"
+        dest: /var/www/app1/index.html
+
+    - name: Create sample index.html for App 2
+      copy:
+        content: "<h1>This is App 2 - Deployed via Ansible</h1>"
+        dest: /var/www/app2/index.html
+
+    - name: Copy NGINX config for App 1
+      copy:
+        src: app1.conf
+        dest: /etc/nginx/conf.d/app1.conf
+      notify: Reload NGINX
+
+    - name: Copy NGINX config for App 2
+      copy:
+        src: app2.conf
+        dest: /etc/nginx/conf.d/app2.conf
+      notify: Reload NGINX
+
+    - name: Ensure nginx is running and enabled
+      service:
+        name: nginx
+        state: started
+        enabled: true
+
+  handlers:
+    - name: Reload NGINX
+      service:
+        name: nginx
+        state: reloaded
