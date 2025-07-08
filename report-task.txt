@@ -1,3 +1,6 @@
+https://zoom.us/j/99485315730?pwd=XNbpLQaiz9wdfhVEUvaoKBLHC2KJJa.1
+
+
 - name: Deploy Two Sample Apps on NGINX
   hosts: webservers
   become: true
