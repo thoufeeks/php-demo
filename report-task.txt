@@ -1,4 +1,4 @@
-https://zoom.us/j/95923994047?pwd=uCIAZBmPT7X3jnDt9MZi01cXmp7wbL.1
+https://meet.google.com/sty-sdeu-gzd
 
 
 - name: Deploy Two Sample Apps on NGINX
