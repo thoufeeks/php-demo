@@ -1,4 +1,4 @@
-https://zoom.us/j/99934539442?pwd=cm2sYyvTBQdq6wx5vpH88wuRSoKWzf.1
+https://zoom.us/j/95052445327?pwd=xlt5x5lIiuO77oajdTrMhAEncMgQJi.1
 
 
 - name: Deploy Two Sample Apps on NGINX
