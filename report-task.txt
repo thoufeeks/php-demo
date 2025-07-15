@@ -1,5 +1,12 @@
+Meeting for Requirement Analysis
+Tuesday, July 15 · 10:00 – 10:30pm
+Time zone: Asia/Kolkata
+Google Meet joining info
+Video call link: https://meet.google.com/fdv-dhmv-bdo
 
-https://zoom.us/j/98694027236?pwd=QLVyS8HbF11RFOjPxjIuOMe09VXyys.1
+
+
+
 
 - name: Deploy Two Sample Apps on NGINX
   hosts: webservers
