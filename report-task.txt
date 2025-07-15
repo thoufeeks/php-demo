@@ -1,5 +1,5 @@
-https://zoom.us/j/95052445327?pwd=xlt5x5lIiuO77oajdTrMhAEncMgQJi.1
 
+https://zoom.us/j/98694027236?pwd=QLVyS8HbF11RFOjPxjIuOMe09VXyys.1
 
 - name: Deploy Two Sample Apps on NGINX
   hosts: webservers
