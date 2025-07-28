@@ -1,5 +1,6 @@
-https://zoom.us/j/91006481018?pwd=OE2c52p0N6DDHYbVfJfbMHPk5X3bta.1
-
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
 
 
 - name: Deploy Two Sample Apps on NGINX
