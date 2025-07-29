@@ -1,3 +1,15 @@
+Join Zoom Meeting
+https://zoom.us/j/93227917634?pwd=likxLoaOOlz0314Ygt7aOvIYpiscmr.1
+
+Meeting ID:  932 2791 7634
+Passcode: 711248
+
+
+
+
+
+
+
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 unzip awscliv2.zip
 sudo ./aws/install
