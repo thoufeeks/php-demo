@@ -1,4 +1,4 @@
-pipeline {
+pipeline {akhila.j@algosium.com
     agent any
 
     stages {
