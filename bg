@@ -1,85 +1,31 @@
-
-https://zoom.us/j/92152598981?pwd=9Ls9zTT1fbMRw2OciR90YmUPnGGmkm.1
-
-helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
-helm repo update
-
-helm install nginx-ingress ingress-nginx/ingress-nginx \
-  --namespace ingress-nginx --create-namespace \
-  --set controller.service.type=LoadBalancer
+FROM node:18-alpine
+WORKDIR /app
+COPY package*.json ./
+RUN npm install --production
+COPY . .
+EXPOSE 3000
+CMD ["node", "app.js"]
 
 
 
+const express = require('express');
+const app = express();
+const PORT = 3000;
+
+app.get('/', (req, res) => {
+  res.send('Hello from Node.js app running on EKS!');
+});
+
+app.listen(PORT, () => {
+  console.log(`App running on port ${PORT}`);
+});
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      - name: app-container
-        image: hashicorp/http-echo
-        args:
-        - "-text=App Blue"
-        ports:
-        - containerPort: 5678
-
----
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: app-green
-  labels:
-    app: myapp
-    version: green
-spec:
-  replicas: 2
-  selector:
-    matchLabels:
-      app: myapp
-      version: green
-  template:
-    metadata:
-      labels:
-        app: myapp
-        version: green
-    spec:
-      containers:
-      - name: app-container
-        image: hashicorp/http-echo
-        args:
-        - "-text=App Green"
-        ports:
-        - containerPort: 5678
-------
-
-apiVersion: v1
-kind: Service
-metadata:
-  name: myapp-service
-spec:
-  selector:
-    app: myapp
-    version: blue 
-  ports:
-  - protocol: TCP
-    port: 80
-    targetPort: 5678
-  type: LoadBalancer
+{
+  "name": "node-eks-app",
+  "version": "1.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
