@@ -1,4 +1,4 @@
-https://zoom.us/j/97941007383?pwd=cIqtjsNbhQPf3ICiguqlXa5NxraFHX.1
+https://zoom.us/j/92145626565?pwd=FlTb52qQyQq4gUpD3sRMIDCLaOWCCD.1
 
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 unzip awscliv2.zip
