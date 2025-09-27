@@ -1,67 +1,62 @@
-https://zoom.us/j/97870993919?pwd=8pa2bKtZ32FDwa39ZTjv27jiTqY5KF.1
+🧾 Job Title: Compliance Engineer – AWS Cloud Environment
+📍 Location: Chennai
+🕒 Employment Type: Full-Time
+🧑‍💼 Department: Cloud Security & Governance
+🧭 Job Summary
+We are seeking a detail-oriented and security-focused Compliance Engineer to join our AWS cloud operations team. The ideal candidate will have hands-on experience with AWS security tools, compliance frameworks, and automation services such as AWS Config, Lambda, SNS, and SES. You will be responsible for ensuring that cloud infrastructure adheres to internal and external compliance standards, implementing automated controls, and supporting audit readiness across AWS environments.
+🛠️ Key Responsibilities
+• Design and implement compliance controls using AWS Config, CloudTrail, and Security Hub to monitor and enforce governance policies.
+• Automate compliance workflows using AWS Lambda, SNS, and SES for alerting, notifications, and remediation actions.
+• Develop and maintain security baselines and configuration rules for AWS resources including EC2, S3, IAM, and VPC.
+• Collaborate with security and DevOps teams to integrate compliance checks into CI/CD pipelines and infrastructure provisioning.
+• Conduct periodic audits and generate compliance reports aligned with frameworks such as ISO 27001, SOC 2, and HIPAA.
+• Respond to security incidents and compliance violations with root cause analysis and corrective actions.
+• Maintain documentation for compliance policies, SOPs, and audit trails.
+🧑‍💻 Technical Skills & Experience
+Skill Area
+	
+Required Experience
 
-curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-unzip awscliv2.zip
-sudo ./aws/install
+
+AWS Security Tools
+	
+Hands-on experience
 
 
-- name: Deploy Two Sample Apps on NGINX
-  hosts: webservers
-  become: true
+AWS Config
+	
+2+ years
 
-  tasks:
-    - name: Enable nginx repo
-      command: amazon-linux-extras enable nginx1
-      args:
-        creates: /etc/yum.repos.d/nginx.repo
 
-    - name: Install nginx
-      yum:
-        name: nginx
-        state: present
+AWS Lambda, SNS, SES
+	
+2+ years
 
-    - name: Create /var/www/app1 directory
-      file:
-        path: /var/www/app1
-        state: directory
-        mode: '0755'
 
-    - name: Create /var/www/app2 directory
-      file:
-        path: /var/www/app2
-        state: directory
-        mode: '0755'
+Cloud Compliance Frameworks
+	
+ISO, SOC, HIPAA
 
-    - name: Create sample index.html for App 1
-      copy:
-        content: "<h1>This is App 1 - Deployed via Ansible</h1>"
-        dest: /var/www/app1/index.html
 
-    - name: Create sample index.html for App 2
-      copy:
-        content: "<h1>This is App 2 - Deployed via Ansible</h1>"
-        dest: /var/www/app2/index.html
+Automation & Scripting
+	
+Python, Bash
 
-    - name: Copy NGINX config for App 1
-      copy:
-        src: app1.conf
-        dest: /etc/nginx/conf.d/app1.conf
-      notify: Reload NGINX
 
-    - name: Copy NGINX config for App 2
-      copy:
-        src: app2.conf
-        dest: /etc/nginx/conf.d/app2.conf
-      notify: Reload NGINX
+Monitoring & Reporting
+	
+CloudWatch, Security Hub
 
-    - name: Ensure nginx is running and enabled
-      service:
-        name: nginx
-        state: started
-        enabled: true
 
-  handlers:
-    - name: Reload NGINX
-      service:
-        name: nginx
-        state: reloaded
+Audit & Governance
+	
+Policy enforcement, risk mitigation
+🎓 Qualifications
+• Bachelor’s degree in Information Security, Computer Science, or related field.
+• AWS certifications (e.g., Security Specialty, Solutions Architect) are a plus.
+• Strong analytical and problem-solving skills.
+• Excellent communication and documentation abilities.
+🌟 Preferred Attributes
+• Experience with AWS Well-Architected Framework and CAF Security Perspective.
+• Familiarity with IAM policy management, TLS enforcement, and data protection mechanisms.
+• Exposure to multi-account AWS environments and cross-region compliance orchestration.
