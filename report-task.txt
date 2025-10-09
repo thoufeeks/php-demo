@@ -1,1 +1,23 @@
-https://zoom.us/j/93222999558?pwd=vaeBAFuiZFKz3cALVbedMUDSdnBOlG.1
+---
+- name: Simple Web Deploy using Nginx
+  hosts: webservers
+  become: yes
+  tasks:
+    - name: Install Nginx
+      apt:
+        name: nginx
+        state: present
+        update_cache: yes
+
+    - name: Deploy custom index.html
+      copy:
+        dest: /var/www/html/index.html
+        content: |
+          <h1>ProdemyX Web App</h1>
+          <p>Deployed via Ansible from Controller </p>
+
+    - name: Start Nginx
+      service:
+        name: nginx
+        state: started
+        enabled: yes
