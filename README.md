@@ -1,4 +1,4 @@
-
+https://zoom.us/j/93056129884?pwd=azC9GFbJ56E0GgRtwvhGGV1faNIPWq.1
 • 1--Install kubectl on Jenkins
  sudo apt update
  sudo apt install curl
