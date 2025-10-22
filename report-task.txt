@@ -1,5 +1,4 @@
-https://zoom.us/j/92622652951?pwd=lIbpIsAFzm9ftAdqYgCYb7lbyZSgAV.1
-
+https://zoom.us/j/99255815441?pwd=RVYZdb0XCNC50qfPSX6rAP8Ts7DXzn.1
 
 ---
 - name: Simple Web Deploy using Nginx
