@@ -1,4 +1,4 @@
-https://meet.google.com/kyb-unjo-fzc
+https://zoom.us/j/91719204744?pwd=XTKBuHN4u3K9tDGIFVVza4HbebAutz.1
 ---
 - name: Simple Web Deploy using Nginx
   hosts: webservers
