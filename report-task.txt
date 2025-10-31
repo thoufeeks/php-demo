@@ -1,4 +1,4 @@
-https://zoom.us/j/98549890534?pwd=bWoKIIWBqy5cBFlADfFqQ6Wbsfjk7p.1
+https://forms.gle/jSBxs8m2jB9wGXfh7
 
 
 - name: Simple Web Deploy using Nginx
