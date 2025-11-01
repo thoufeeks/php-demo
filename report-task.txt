@@ -1,4 +1,4 @@
-https://ec2-51-20-181-128.eu-north-1.compute.amazonaws.com/
+https://meet.google.com/duj-uwdj-kqk
 
 
 - name: Simple Web Deploy using Nginx
