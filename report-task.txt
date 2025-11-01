@@ -1,4 +1,4 @@
-https://zoom.us/j/95025187307?pwd=TrAKt6zC6q0IQblO5WY4kCf0rXapN3.1
+https://ec2-51-20-181-128.eu-north-1.compute.amazonaws.com/
 
 
 - name: Simple Web Deploy using Nginx
