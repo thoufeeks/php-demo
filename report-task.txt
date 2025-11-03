@@ -1,4 +1,4 @@
-https://meet.google.com/mob-dkzm-aks
+https://zoom.us/j/99982646365?pwd=XNqLmGa5tClgJ9k004FUZ24ZSxnRHA.1
 
 
 - name: Simple Web Deploy using Nginx
