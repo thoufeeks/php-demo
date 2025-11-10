@@ -1,4 +1,4 @@
-https://zoom.us/j/93885823373?pwd=69n5bRX3bJgbCY5TZKVtauOIRpahOC.1
+https://zoom.us/j/94714533794?pwd=USaeVpxFHFC84bS41uXhCKrtkWxTw5.1
 
 - name: Simple Web Deploy using Nginx
   hosts: webservers
