@@ -1,4 +1,7 @@
-https://zoom.us/j/93049195039?pwd=md7l5wabLWsDMfibe0dxIJpXd0d5Fi.1
+https://meet.google.com/qnd-etzw-dqo
+
+
+
 - name: Simple Web Deploy using Nginx
   hosts: webservers
   become: yes
