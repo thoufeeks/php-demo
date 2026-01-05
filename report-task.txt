@@ -1,3 +1,5 @@
+https://zoom.us/j/95446638837?pwd=noIstdnFRsKnuMqI6Ib2ISLWnu5tXE.1
+
 {
   "Version": "2012-10-17",
   "Statement": [
