@@ -1,5 +1,4 @@
-https://zoom.us/j/91658046876?pwd=9so4999fv2G8EhfkjBw4afQwYmxHma.1
-
+https://meet.google.com/jpx-dugm-hmp
 {
   "Version": "2012-10-17",
   "Statement": [
