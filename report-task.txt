@@ -1,4 +1,4 @@
-https://meet.google.com/jpx-dugm-hmp
+https://zoom.us/j/95096177209?pwd=Tu4GzSxjYTqTULdpVNydMMm9Hr7vCB.1
 {
   "Version": "2012-10-17",
   "Statement": [
