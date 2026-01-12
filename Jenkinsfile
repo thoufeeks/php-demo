@@ -1,3 +1,5 @@
+https://zoom.us/j/94866501960?pwd=uW0gFaLtEquxLcIlpHeZirtoZ6qrxb.1
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
