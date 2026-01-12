@@ -1,4 +1,4 @@
-https://meet.google.com/agy-mxgg-qtc
+kubectl run stress --rm -it --image=busybox -- sh -c "while true; do wget -q -O- http://<service-name>; done"
 {
   "Version": "2012-10-17",
   "Statement": [
